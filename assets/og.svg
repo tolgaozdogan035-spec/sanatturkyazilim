@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+<defs><radialGradient id="r" cx=".8" cy=".2" r=".9"><stop offset="0" stop-color="#7a1a27"/><stop offset="1" stop-color="#0a0a10"/></radialGradient></defs>
+<rect width="1200" height="630" fill="url(#r)"/>
+<text x="90" y="300" font-family="Georgia,serif" font-weight="900" font-size="110" fill="#fff">Sanat<tspan fill="#d63a52">Türk</tspan></text>
+<text x="94" y="370" font-family="Arial" font-weight="700" font-size="40" letter-spacing="14" fill="#e8aab3">YAZILIM</text>
+<text x="94" y="450" font-family="Arial" font-size="30" fill="#c9c9d4">Web • Mobil Uygulama • Dijital Çözümler</text>
+<text x="94" y="560" font-family="Arial" font-size="26" fill="#9a9aa8">sanatturkyazilim.com</text>
+</svg>
