@@ -1,4 +1,4 @@
-const $=s=>document.querySelector(s);
+﻿const $=s=>document.querySelector(s);
 $('#y').textContent=new Date().getFullYear();
 
 const burger=$('#burger'),menu=$('#menu');
@@ -12,7 +12,7 @@ document.querySelectorAll('a[href="#top"]').forEach(a=>a.addEventListener('click
 }));
 
 // scroll reveal
-document.querySelectorAll('.card,.steps li,.pills,.code,.form,.showcase').forEach(e=>e.classList.add('rv'));
+document.querySelectorAll('.card,.steps li,.pills,.code,.form').forEach(e=>e.classList.add('rv'));
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
 document.querySelectorAll('.rv').forEach(e=>io.observe(e));
 
@@ -37,3 +37,9 @@ rs();addEventListener('resize',rs);
   });
   requestAnimationFrame(draw);
 })();
+
+// 3D phone scene: tilt with pointer
+(()=>{const box=document.getElementById('showcase'),sc=document.getElementById('scene');if(!box||!sc||matchMedia('(pointer:coarse)').matches)return;
+ box.addEventListener('pointermove',e=>{const r=box.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;
+  sc.style.setProperty('--ry',(-22+x*34)+'deg');sc.style.setProperty('--rx',(10-y*22)+'deg')});
+ box.addEventListener('pointerleave',()=>{sc.style.setProperty('--ry','-22deg');sc.style.setProperty('--rx','10deg')});})();
