@@ -89,7 +89,7 @@ h2{font-size:clamp(28px,4vw,44px);margin-bottom:44px;max-width:720px}
 .foot{background:#06060a;color:#8a8a98;padding:30px 0;font-size:13px}
 .foot{padding:48px 0 28px}
 .foot-in{padding-bottom:28px;border-bottom:1px solid #1c1c26}
-.sisters{display:grid;grid-template-columns:1fr 1fr 1fr 1.3fr;align-items:center}
+.sisters{display:grid;grid-template-columns:repeat(4,1fr);align-items:center}
 .sisters a{display:flex;justify-content:center;align-items:center;height:52px}
 .sisters a+a{border-left:1px solid #2a2a3a}
 .sisters img{height:52px;width:auto;max-width:100%;opacity:.92;transition:.2s}.sisters a:hover img{opacity:1;transform:translateY(-2px)}
